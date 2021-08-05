@@ -15,33 +15,26 @@ function writeToFile(data) {
         const responseObj = JSON.parse(data);
         const filetext =`# ${responseObj.name}  
         
-        ## Description
-        [![MIT License][license-shield]][license-url]
-
-         ${responseObj.description} 
-         <!-- TABLE OF CONTENTS -->
-         <details open="open">
-         <summary>Table of Contents</summary>
-         <ol>
-         <li><a href='#installation>Installation</a></li>
-         <li><a href='#usage>Usage</a></li>
-         <li><a href='#credits>Credits</a></li>
-         <li><a href='#license>License</a></li>
-         <ol>
-         </details>
-
-         ## Installation
+## Description
+   ${responseObj.description} 
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+## Installation
       ${responseObj.install}
-      ## Usage
+## Usage
       ${responseObj.example}
-      ## Credits
-      
+## Credits
 ## License
-       ${responseObj.license}`
-            
-         
-         
-          return filetext ;
+![badge](https://img.shields.io/badge/license-${responseObj.license}-brightgreen)
+<br />
+This application is covered by the ${responseObj.license} license.`
+ return filetext ;
         
        
           
@@ -83,7 +76,7 @@ function init() {
     .then((response) =>
         //console.log(JSON.stringify(response));
    //console.log(JSON.stringify(response));
-   fs.appendFile('../../README.md', writeToFile(JSON.stringify(response)), (err) =>
+   fs.writeFile('README.md', writeToFile(JSON.stringify(response)), (err) =>
    err ? console.error(err) : console.log('you have successfully saved the info!')
  
   ));
