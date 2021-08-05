@@ -83,7 +83,7 @@ function init() {
     .then((response) =>
         //console.log(JSON.stringify(response));
    //console.log(JSON.stringify(response));
-   fs.writeFile('../../README.md', writeToFile(JSON.stringify(response)), (err) =>
+   fs.appendFile('../../README.md', writeToFile(JSON.stringify(response)), (err) =>
    err ? console.error(err) : console.log('you have successfully saved the info!')
  
   ));
