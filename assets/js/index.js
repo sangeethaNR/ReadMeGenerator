@@ -13,27 +13,29 @@ function writeToFile(data) {
 
     
         const responseObj = JSON.parse(data);
-        const filetext =`<!DOCTYPE html>
-          <html lang="en">
-          <head>
-              <meta charset="UTF-8">
-              <meta http-equiv="X-UA-Compatible" content="IE=edge">
-              <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>Document</title>
-          </head>
-          <body>
-           <h1> Welcome ${data.name}</h1>
-        <ul>
-        <li> Your location : ${data.description}</li>
-        <li> Your Bio : ${data.install}</li>
-        <li> <a href='${responseObj.example}' target="_blank">LinkedIn</a><li>
-        <li> <a href='${responseObj.license}' target="_blank"> Github</li>
-        </ul>  
+        const filetext =`# ${responseObj.name}  
+        ## Description
+
+         ${responseObj.description} 
+
+         ## Table of Contents
+         -[Installation](#installation)
+         -[Usage](#usage)
+         -[Credits](#credits)
+         -[License](#license)
+
+         ## Installation
+      ${responseObj.install}
+      ## Usage
+      ${responseObj.example}
+      ## Credits
+      
+## License
+       ${responseObj.license}`
             
-         </body>
-          </html>`
-          fs.writeFile('index.html', filetext);
-          return ;
+         
+         
+          return filetext ;
         
        
           
