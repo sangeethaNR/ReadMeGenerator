@@ -37,12 +37,13 @@ ${responseObj.description}
 ## Credits
 ## License
 ${licenseBadge_link}
+This application is covered by the ${responseObj.license} license.
 ## Contributing
 ${responseObj.contibution}
 <br />
 ## Tests
-${responseObj.testing}
-This application is covered by the ${responseObj.license} license.`
+${responseObj.testing}`
+
  return filetext ;
         
        
