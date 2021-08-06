@@ -62,21 +62,25 @@ function init() {
         type: 'input',
         message: questions[0],
         name: 'name',
+        validate :(value) => {if(value) return true; else return 'Please enter something to continiue' }
       },
       {
         type: 'input',
         message: questions[1],
         name: 'description',
+        validate :(value) => {if(value) return true; else return 'Please enter something to continiue' }
       },
       {
         type: 'input',
         message: questions[2],
         name: 'install',
+        validate :(value) => {if(value) return true; else return 'Please enter something to continiue' }
       },
       {
         type: 'input',
         message: questions[3],
         name: 'example',
+        validate :(value) => {if(value) return true; else return 'Please enter something to continue' }
 
       },
       {
@@ -84,29 +88,34 @@ function init() {
         message: questions[4],
         name: 'license',
         choices:['MIT','GNU','Mozilla','ISC'],
+        validate :(value) => {if(value) return true; else return 'Please select something to continue' }
       },
       {
         type: 'input',
         message: questions[5],
         name: 'contibution',
+        
 
       },
       {
         type: 'input',
         message: questions[6],
         name: 'testing',
+       
 
       },
       {
         type: 'input',
         message: questions[7],
         name: 'username',
+        validate :(value) => {if(value) return true; else return 'Please enter something to continue' }
 
       },
       {
         type: 'input',
         message: questions[8],
         name: 'contact',
+        validate :(value) => {if(value) return true; else return 'Please enter something to continue' }
 
       }
 
