@@ -6,7 +6,7 @@ const generateMarkdown = require('./generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = ['Enter your Project Title','Provide a short description explaining the what, why, and how of your ',
                    'What are the steps required to install your project? Provide a step-by-step description',
-                    'Provide instructions and examples for use','What License is being used? (ie...MIT)','Who contributed to this project','What commands are needed to test this app?','Contact info for questions'];
+                    'Provide instructions and examples for use','What License is being used? (ie...MIT)','Who contributed to this project','What commands are needed to test this app?','What is your GitHub Username?','Please enter your e-mail address'];
                  
 
 // TODO: Create a function to write README file
@@ -29,7 +29,8 @@ ${responseObj.description}
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
-- [Questions](#questions)
+- [Questions](#username)
+- [Contact](#contact)
 ## Installation
       ${responseObj.install}
 ## Usage
@@ -41,9 +42,12 @@ This application is covered by the ${responseObj.license} license.
 ## Contributing
 ${responseObj.contibution}
 <br />
-## Tests
-${responseObj.testing}`
-
+## Testing
+${responseObj.testing}
+## 🙋‍♀️ Questions
+ GitHub : <a href = "https://github.com/${responseObj.username}">💻</a>
+## Contact
+ You can reach me at <a href="mailto:${responseObj.contact}"> ✉️ </a> `
  return filetext ;
         
        
@@ -96,6 +100,12 @@ function init() {
       {
         type: 'input',
         message: questions[7],
+        name: 'username',
+
+      },
+      {
+        type: 'input',
+        message: questions[8],
         name: 'contact',
 
       }

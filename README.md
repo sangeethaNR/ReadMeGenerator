@@ -6,6 +6,7 @@
  node.js
 
  ## Features
+ ```
  GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
@@ -21,6 +22,7 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
+```
 
 ## Installation 💾
 On GitHub, navigate to the main page of the repository. To clone the repository using HTTPS, under "Clone with HTTPS", click . To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click clipboard image . To clone a repository using GitHub CLI, click Use GitHub CLI, then click clipboard image .
@@ -42,10 +44,15 @@ You installed the project to your local!!!
 Link to the deployed application https://github.com/sangeethaNR/ReadMeGenerator.git
  
  Upon Installation to run thi app
+
  Open integrated Terminal 
- npm init i
- It will install inquirer as the app has its dependency.
+ 
+ <b> npm init i </b>
+
+It will install inquirer as the app has its dependency.
+
  To make use this app
+
  use <b>node index.js </b>
 
 

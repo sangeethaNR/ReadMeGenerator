@@ -10,17 +10,22 @@ hange the current working directory to the location where you want the cloned di
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
-- [Questions](#questions)
+- [Questions](#username)
+- [Contact](#contact)
 ## Installation
-      $ git clone git@github.com:sangeethaNR/weatherDashboard.git Press Enter to create your local clone.
+      hange the current working directory to the location where you want the cloned directory.
 ## Usage
-      $ git clone git@github.com:sangeethaNR/weatherDashboard.git
+      hange the current working directory to the location where you want the cloned directory.
 ## Credits
 ## License
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+This application is covered by the MIT license.
 ## Contributing
-ZXAZX
+angeetha
 <br />
 ## Tests
-xzxzx
-This application is covered by the MIT license.
+node index.js
+## 🙋‍♀️ Questions
+ GitHub : <a href = "https://github.com/sangeethaNR">:octocat:</a>
+## Contact
+ You can reach me at <a href="mailto:sangeethajadhav123@gmail.com"> ✉️ </a> 
