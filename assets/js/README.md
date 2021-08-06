@@ -1,8 +1,8 @@
+
 # sample  
-        
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)   
 ## Description
-       
-         here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there is 
+hange the current working directory to the location where you want the cloned directory. 
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -10,13 +10,17 @@
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
-- [Questions](#questions
+- [Questions](#questions)
 ## Installation
-      here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there is
+      $ git clone git@github.com:sangeethaNR/weatherDashboard.git Press Enter to create your local clone.
 ## Usage
-      here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there is
+      $ git clone git@github.com:sangeethaNR/weatherDashboard.git
 ## Credits
 ## License
-![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+## Contributing
+ZXAZX
 <br />
+## Tests
+xzxzx
 This application is covered by the MIT license.

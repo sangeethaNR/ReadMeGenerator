@@ -1,10 +1,12 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+//const markdown =require('generateMarkdown');
+const generateMarkdown = require('./generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = ['Enter your Project Title','Provide a short description explaining the what, why, and how of your ',
                    'What are the steps required to install your project? Provide a step-by-step description',
-                    'Provide instructions and examples for use','License'];
+                    'Provide instructions and examples for use','What License is being used? (ie...MIT)','Who contributed to this project','What commands are needed to test this app?','Contact info for questions'];
                  
 
 // TODO: Create a function to write README file
@@ -13,10 +15,13 @@ function writeToFile(data) {
 
     
         const responseObj = JSON.parse(data);
-        const filetext =`# ${responseObj.name}  
-        
+        const licenseBadge_link = generateMarkdown(`${responseObj.license}`);
+       
+        const filetext =`
+# ${responseObj.name}  
+${licenseBadge_link}   
 ## Description
-   ${responseObj.description} 
+${responseObj.description} 
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -31,8 +36,12 @@ function writeToFile(data) {
       ${responseObj.example}
 ## Credits
 ## License
-![badge](https://img.shields.io/badge/license-${responseObj.license}-brightgreen)
+${licenseBadge_link}
+## Contributing
+${responseObj.contibution}
 <br />
+## Tests
+${responseObj.testing}
 This application is covered by the ${responseObj.license} license.`
  return filetext ;
         
@@ -69,7 +78,25 @@ function init() {
         type: 'list',
         message: questions[4],
         name: 'license',
-        choices:['MIT','GNU','Apache 2.0'],
+        choices:['MIT','GNU','Mozilla','ISC'],
+      },
+      {
+        type: 'input',
+        message: questions[5],
+        name: 'contibution',
+
+      },
+      {
+        type: 'input',
+        message: questions[6],
+        name: 'testing',
+
+      },
+      {
+        type: 'input',
+        message: questions[7],
+        name: 'contact',
+
       }
 
     ])
