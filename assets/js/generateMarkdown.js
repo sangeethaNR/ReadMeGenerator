@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   
 if(license){
-  console.log("inside renderbadge" + license)
+ 
   return `[![License](https://img.shields.io/badge/License-${license}-blue.svg)]`
 
 }
