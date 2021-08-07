@@ -3,7 +3,7 @@
  When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions—this last part increases the likelihood that other developers will contribute to the success of the project.
  The ScreenShot of the app given below
  ![Scrrenshot of ReadMe Generator](assets/gif&video/ReadMe.gif)
-Click on this <a href ="assets/gif&video/ReadME.webm" target="_blank">link </a> to get the video of ReadME Generator.
+Click on this <a href ="assets/gif&video/ReadMe.webm" target="_blank">link </a> to get the video of ReadME Generator.
  ## Technologies Used
  node.js
 
