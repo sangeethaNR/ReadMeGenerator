@@ -4,7 +4,12 @@
  The ScreenShot of the app given below
  ![Scrrenshot of ReadMe Generator](assets/gif&video/ReadMe.gif)
  
-   Click on this <a href ="assets/gif&video/ReadME.mp4" target="_blank">link </a> to get the video of ReadME Generator.
+ Video of how to generate README file
+   
+
+https://user-images.githubusercontent.com/81266861/128613273-80ecb380-3078-426a-9e5b-7fca1a254f82.mp4
+
+
  ## Technologies Used
  node.js
 
